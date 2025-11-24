@@ -1,0 +1,89 @@
+#Minecraft server properties
+#Example configuration file for Nvidia Spark Minecraft Server
+
+# Server Settings
+accepts-transfers=false
+allow-flight=false
+autosave-interval=6000
+broadcast-console-to-ops=true
+broadcast-rcon-to-ops=true
+bug-report-link=
+debug=false
+difficulty=easy
+enable-code-of-conduct=false
+enable-jmx-monitoring=false
+enable-query=false
+enable-rcon=false
+enable-status=true
+enforce-secure-profile=true
+enforce-whitelist=false
+entity-broadcast-range-percentage=100
+force-gamemode=false
+function-permission-level=2
+gamemode=creative
+generate-structures=true
+generator-settings={}
+hardcore=false
+hide-online-players=false
+initial-disabled-packs=
+initial-enabled-packs=vanilla
+level-name=world
+level-seed=
+level-type=minecraft\:normal
+log-ips=true
+
+# Management server - Generate new secret!
+management-server-enabled=false
+management-server-host=localhost
+management-server-port=0
+# IMPORTANT: Generate a new secret with: openssl rand -base64 32
+management-server-secret=CHANGE_THIS_TO_A_NEW_SECRET
+management-server-tls-enabled=true
+management-server-tls-keystore=
+management-server-tls-keystore-password=
+
+# Performance settings (optimized for Nvidia Spark)
+max-chained-neighbor-updates=1000000
+max-players=20
+max-tick-time=60000
+max-world-size=29999984
+
+# Server MOTD (customize this!)
+motd=Nvidia Spark Minecraft Server
+
+# Network settings
+network-compression-threshold=256
+# IMPORTANT: Set to false for Geyser/Floodgate crossplay
+online-mode=false
+op-permission-level=4
+pause-when-empty-seconds=-1
+player-idle-timeout=0
+prevent-proxy-connections=false
+query.port=25565
+rate-limit=0
+
+# RCON settings (optional remote console)
+rcon.password=
+rcon.port=25575
+
+# World settings
+region-file-compression=deflate
+require-resource-pack=false
+resource-pack=
+resource-pack-id=
+resource-pack-prompt=
+resource-pack-sha1=
+save-world-on-stop=true
+server-ip=
+server-port=25565
+
+# View distance (lower for better performance on Spark)
+simulation-distance=5
+spawn-protection=16
+status-heartbeat-interval=0
+sync-chunk-writes=true
+text-filtering-config=
+text-filtering-version=0
+use-native-transport=true
+view-distance=5
+white-list=false

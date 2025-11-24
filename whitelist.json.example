@@ -1,0 +1,10 @@
+[
+  {
+    "uuid": "example-uuid-here",
+    "name": "PlayerName1"
+  },
+  {
+    "uuid": "another-uuid-here",
+    "name": "PlayerName2"
+  }
+]

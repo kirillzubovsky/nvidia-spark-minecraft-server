@@ -1,0 +1,37 @@
+#!/bin/bash
+cd ~/minecraft || { echo "Error: ~/minecraft directory not found!"; exit 1; }
+IP=$(hostname -I | awk '{for(i=1;i<=NF;i++) if($i ~ /^(192\.168|10\.|172\.(1[6-9]|2[0-9]|3[0-1]))/) {print $i; exit}}')
+[ -z "$IP" ] && IP="YOUR_LOCAL_IP_HERE"
+clear
+echo "Starting Minecraft Crossplay Server (Java + Bedrock/Switch)"; echo
+if screen -list | grep -q "mc"; then
+    echo "Stopping old server session..."
+    screen -S mc -X stuff '^C' 2>/dev/null; sleep 3; screen -S mc -X quit 2>/dev/null
+fi
+echo "Launching server in background (screen -S mc)..."
+screen -dmS mc bash -c "cd ~/minecraft && java -Xmx12G -Xms12G -jar paper.jar nogui"
+sleep 6
+echo "Server is ONLINE!"; echo "Your local IP: $IP"; echo
+echo "Console commands:"; echo "  Reattach console : screen -r mc"
+echo "  Graceful stop    : type 'stop' inside the console"
+echo "  Force kill       : screen -S mc -X quit"; echo
+echo "=== How to join ==="; echo
+echo "Java Edition (Mac / PC / Linux):"
+echo "  1. Open Minecraft Java Edition (1.21.10+)"
+echo "  2. Multiplayer → Add Server"
+echo "  3. Server Address → $IP:25565"; echo
+echo "Nintendo Switch (Bedrock):"
+echo "  1. Settings → Internet → [Your WiFi] → Change Settings → DNS Settings → Manual"
+echo "  2. Primary DNS   : 45.55.68.52    (BedrockConnect – works everywhere)"
+echo "  3. Secondary DNS : 8.8.8.8"
+echo "  4. Save → Test Connection → Restart Minecraft"
+echo "  5. Play → Servers → Add Server"
+echo "      Name    : Home (or anything you like)"
+echo "      Address : $IP:19132"
+echo "  6. Join with your Microsoft/Xbox account"; echo
+echo "Tips:"
+echo "  • On your home network = instant connection, no port forwarding needed"
+echo "  • Want to play from outside? Forward ports 25565 (TCP+UDP) and 19132 (UDP) on your router"
+echo "  • Switch DNS resets when you change Wi-Fi – just redo steps 1-4"
+echo "  • Watch logs: tail -f ~/minecraft/logs/latest.log"; echo
+echo "Your kids are ready to build together! Have fun!"

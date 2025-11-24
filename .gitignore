@@ -1,0 +1,96 @@
+# Minecraft Server Files
+# ======================
+
+# Server JARs (large files)
+*.jar
+paper.jar
+spigot.jar
+bukkit.jar
+craftbukkit.jar
+
+# World folders (user-generated content)
+world/
+world_nether/
+world_the_end/
+
+# Player data
+usercache.json
+ops.json
+whitelist.json
+banned-ips.json
+banned-players.json
+
+# Server configuration (may contain sensitive data)
+server.properties
+bukkit.yml
+spigot.yml
+paper*.yml
+commands.yml
+permissions.yml
+help.yml
+
+# Plugin data and configurations
+plugins/
+libraries/
+cache/
+versions/
+
+# Logs
+logs/
+*.log
+*.log.gz
+.console_history
+disconnect-log.txt
+
+# Backups
+backups/
+*.tar.gz
+*.zip
+
+# Session and temporary files
+eula.txt
+version_history.json
+
+# System Files
+# =============
+.DS_Store
+Thumbs.db
+desktop.ini
+.directory
+
+# IDE Files
+# =========
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+# ===============
+target/
+build/
+out/
+bin/
+
+# Environment files
+# =================
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Credentials and keys
+# ====================
+*.key
+*.pem
+*.p12
+*.pfx
+saved-refresh-tokens.json
+key.pem
+
+# Keep example files
+!*.example
+!server.properties.example
+!whitelist.json.example
