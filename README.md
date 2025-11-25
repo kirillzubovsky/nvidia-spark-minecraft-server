@@ -4,7 +4,7 @@ A complete setup guide for running a Minecraft server with cross-platform play (
 
 TLDR: Microsoft makes it very difficult to run a Minecraft server on a local network such that both Mac players and Nintendo Switch players could join the same game on different platforms. While it is possible to run a Microsoft server online, on say a Hetzner instance for about $20/months, Nvidia Spark GDX is already an always on Linux computer that is connected to a home network. It seemed like a perfect solution for running a Minecraft server.
 
-Before you begin with the technical setup, be aware that you would need to be the "parent" for your children in the Microsoft ecosystem, and both you and your children need to have a Microsoft account. You would need to update their parental control settings to allow to join and create third party servers. You would also need to pay for Nintendo Switch Online subscription, or the Switch will block your access to external servers.
+Before you begin with the technical setup, be aware that you would need to be the "parent" for your children in the Microsoft ecosystem, and both you and your children need to have a Microsoft account. You would need to [update their parental control settings](https://www.xbox.com/en-US/user/settings/privacy-and-safety) to allow to join and create third party servers. You would also need to pay for Nintendo Switch Online subscription, or the Switch will block your access to external servers.
 
 ![Minecraft server running on Nvidia Spark with cross-platform play](images/minecraft-gameplay-by-midjourney.png "Family playing Minecraft together")
 
