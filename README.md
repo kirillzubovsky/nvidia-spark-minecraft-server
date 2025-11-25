@@ -1,4 +1,4 @@
-# Nvidia Spark Minecraft Server (so kinds could play Minecraft together)
+# Nvidia Spark Minecraft Server (so kids could play Minecraft together)
 
 A complete setup guide for running a Minecraft server with cross-platform play (Java + Bedrock) on Nvidia Spark DGX systems. Perfect for local LAN gaming with kids, supporting both PC/Mac (Java Edition) and Nintendo Switch/Mobile (Bedrock Edition) players!
 
