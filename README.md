@@ -6,6 +6,8 @@ TLDR: Microsoft makes it very difficult to run a Minecraft server on a local net
 
 Before you begin with the technical setup, be aware that you would need to be the "parent" for your children in the Microsoft ecosystem, and both you and your children need to have a Microsoft account. You would need to update their parental control settings to allow to join and create third party servers. You would also need to pay for Nintendo Switch Online subscription, or the Switch will block your access to external servers.
 
+![Minecraft server running on Nvidia Spark with cross-platform play](images/minecraft-gameplay-by-midjourney.png "Family playing Minecraft together")
+
 ## Features
 
 - **Cross-platform play**: Java Edition (PC/Mac) and Bedrock Edition (Switch/Mobile/Xbox) on the same server
